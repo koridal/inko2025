@@ -1,4 +1,4 @@
-import { schemaTypes } from "@/sanity/schemaTypes";
+import { schemaTypes } from "./src/sanity/schemaTypes";
 import { defineConfig } from "sanity";
 
 
