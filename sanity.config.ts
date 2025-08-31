@@ -1,22 +1,15 @@
-// schemas/project.ts
-import { defineType } from "sanity";
+import { schemaTypes } from "@/sanity/schemaTypes";
+import { defineConfig } from "sanity";
 
-const project = defineType({
-  name: "project",
-  title: "Project",
-  type: "document",
-  fields: [
-    {
-      name: "title",
-      title: "Title",
-      type: "string",
-    },
-    {
-      name: "description",
-      title: "Description",
-      type: "text",
-    },
-  ],
+
+export default defineConfig({
+  name: "default", // workspace 이름
+  title: "My Sanity Studio",
+
+  projectId: "your-project-id", // ← Sanity 프로젝트 ID
+  dataset: "production",        // ← Dataset (예: production)
+
+  schema: {
+    types: schemaTypes, // ✅ 배열로 전달
+  },
 });
-
-export default project;
