@@ -1,0 +1,23 @@
+import type { Metadata } from "next";
+import type { Viewport } from "next";
+import { metadata as studioMetadata } from "next-sanity/studio";
+import { viewport as studioViewport } from "next-sanity/studio";
+import Studio from "./Studio";
+
+export const metadata: Metadata = {
+  ...studioMetadata,
+  title: "Loading Studio...",
+};
+
+export const viewport: Viewport = {
+  ...studioViewport,
+  interactiveWidget: "resizes-content",
+};
+
+export default function StudioPage() {
+  return (
+    <div>
+      <Studio />
+    </div>
+  )
+}
