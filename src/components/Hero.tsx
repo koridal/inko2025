@@ -10,7 +10,7 @@ export default function Hero() {
 				loop
 				muted
 			/>
-			<div className="absolute top-0 w-full h-full text-gray-100 flex flex-col items-center justify-center">
+			<div className="absolute top-0 max-w-7xl text-gray-100 flex flex-col items-center justify-center">
 				<h1 className="text-2xl sm:text-4xl lg:text-6xl xl:tet-8xl font-bold mt-15 md:mt-40">
 					An Expert Construction <br />
 					Services &nbsp;you can &nbsp;Trust
